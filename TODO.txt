@@ -1,0 +1,4 @@
+TODO List:
+
+1. alticci-test
+	- Ajuste na documentação com Swagger para exibir o exemplo do Response e Exceptions.
