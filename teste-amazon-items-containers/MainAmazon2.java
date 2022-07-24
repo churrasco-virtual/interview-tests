@@ -8,7 +8,7 @@ import static java.util.stream.Collectors.toList;
 
 public class MainAmazon2 {
 
-    public static final String LOCAL_PATH = ".\\teste-amazon-transaction-log";
+    public static final String LOCAL_PATH = ".\\teste-amazon-items-containers";
 
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(LOCAL_PATH + "\\entrada")));
