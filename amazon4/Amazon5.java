@@ -28,9 +28,8 @@ public class Amazon5 {
         for (int i = 0; i < matrix.length; i++) {
 
             for (int j = i; j < matrix.length; j++) {
-                System.out.print("min -> "+min(matrix,i,j) + " * ");
-                System.out.println("sum -> "+sum(matrix,i,j));
-                resultado += min(matrix,i,j) * sum(matrix,i,j);
+                System.out.println("min -> " + min(matrix, i, j) + " * sum -> " + sum(matrix, i, j) + " = " + min(matrix, i, j) * sum(matrix, i, j));
+                resultado += min(matrix, i, j) * sum(matrix, i, j);
             }
         }
         return resultado;
@@ -39,8 +38,8 @@ public class Amazon5 {
     static int min(Integer[][] matrix, int i, int j) {
         int retorno = Integer.MAX_VALUE;
 
-        for (int j2 = i; j2 <= i; j2--) {
-            if (matrix[i][j2] < retorno) {
+        for (int j2 = j; j2 >= 0; j2--) {
+            if (null != matrix[i][j2] && matrix[i][j2] < retorno) {
                 retorno = matrix[i][j2].intValue();
             }
         }
@@ -50,8 +49,10 @@ public class Amazon5 {
     static int sum(Integer[][] matrix, int i, int j) {
         int retorno = 0;
 
-        for (int j2 = i; j2 < i; j2--) {
-            retorno += matrix[i][j2].intValue();
+        for (int j2 = j; j2 >= 0; j2--) {
+            if (null != matrix[i][j2] ) {
+                retorno += matrix[i][j2].intValue();
+            }
         }
         return retorno;
     }
