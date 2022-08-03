@@ -21,6 +21,7 @@ class MainTest {
         assertEquals(Arrays.asList(42, 423, 420), sortArray(Arrays.asList(input_3)));
     }
 
+    @Test
     void functionTest() {
         assertEquals("95021", function(input_1));
         assertEquals("56550", function(input_2));
