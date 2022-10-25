@@ -1,0 +1,21 @@
+Java version: 18-ea+1-7
+
+output logs will appear here
+
+== RUNNING TEST CASES ==
+
+== INPUT ==
+new String[] {"5624", "0010111111001"}
+
+== OUTPUT ==
+5624
+<< WRONG >>
+<< EXPECTED OUTPUT: 2 >>
+
+== INPUT ==
+new String[] {"44", "111111"}
+
+== OUTPUT ==
+44
+<< WRONG >>
+<< EXPECTED OUTPUT: 3 >>
